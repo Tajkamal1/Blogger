@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  section {
+    height: 100vh;
+    position: relative;
+    background-color: black;
+    
+  }
+  
+  video {
+    object-fit: cover;
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Set a higher z-index for the video to be behind the text */
+  }
+  
+  h1 {
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    opacity: 1;
+    color: #ddd;
+    font-size: 5em;
+    letter-spacing: 0.4em;
+    z-index: 2; /* Set a lower z-index for the text to be on top of the video */
+  }
+  
+  h1 span {
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotateY(90deg);
+      filter: blur(10px);
+    }
+    100% {
+      opacity: 3;
+      backface-visibility: hidden;
+      transform: rotateY(0deg);
+      filter: blur(0);
+    }
+  }
+  
+  h1 span:nth-child(1) {
+    animation-delay: 1s;
+  }
+  h1 span:nth-child(2) {
+    animation-delay: 1.50s;
+  }
+  h1 span:nth-child(3) {
+    animation-delay: 2.10s;
+  }
+  h1 span:nth-child(4) {
+    animation-delay: 2.30s;
+  }
+  h1 span:nth-child(5) {
+    animation-delay: 2.50s;
+  }
+  h1 span:nth-child(6) {
+    animation-delay: 3s;
+  }
+  h1 span:nth-child(7) {
+    animation-delay: 3.20s;
+  }
+  h1 span:nth-child(8) {
+    animation-delay: 3.30s;
+    padding-left: 30px;
+  }
+  h1 span:nth-child(9) {
+    animation-delay: 3.50s;
+  }
+  h1 span:nth-child(10) {
+    animation-delay: 4s;
+  }
+  

@@ -1,0 +1,25 @@
+.home {
+    background-color: white;
+  }
+  
+  .navbar {
+    background-color: #0893f7 !important;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  p{
+    font-size:27px;
+  }
