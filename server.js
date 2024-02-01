@@ -33,6 +33,36 @@ const LoginData = mongoose.model('LoginData', {
   loginDateTime: { type: Date, default: Date.now }
 });
 
+// Check if the email exists in the SignUp collection
+app.post('/api/checkEmail', async (req, res) => {
+  try {
+    const { email } = req.body;
+    const userExists = await SignUp.exists({ Email: email });
+    res.json({ exists: userExists });
+  } catch (error) {
+    console.error('Error checking email existence:', error.message);
+    res.status(500).json({ success: false, error: 'Internal Server Error' });
+  }
+});
+
+// Additional route for handling password reset
+app.post('/api/resetPassword', async (req, res) => {
+  try {
+    const { email, newPassword } = req.body;
+    const updatedUser = await SignUp.findOneAndUpdate({ Email: email }, { password: newPassword }, { new: true });
+
+    if (updatedUser) {
+      res.json({ success: true, message: 'Password reset successful' });
+    } else {
+      res.status(404).json({ success: false, message: 'User not found' });
+    }
+  } catch (error) {
+    console.error('Error resetting password:', error.message);
+    res.status(500).json({ success: false, error: 'Internal Server Error' });
+  }
+});
+
+// Login route
 app.post('/api/login', async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -41,7 +71,6 @@ app.post('/api/login', async (req, res) => {
     if (user) {
       const loginData = new LoginData({ email, password });
       await loginData.save();
-
       res.status(200).json({ success: true, user, message: 'Login successful' });
     } else {
       res.status(401).json({ success: false, message: 'Invalid email or password' });
@@ -52,18 +81,18 @@ app.post('/api/login', async (req, res) => {
   }
 });
 
+// Signup route
 app.post('/api/signup', async (req, res) => {
   try {
     const { fullName, Email, password } = req.body;
-
     const existingUser = await SignUp.findOne({ Email });
+
     if (existingUser) {
       return res.status(400).json({ success: false, message: 'Email is already taken' });
     }
 
     const signup = new SignUp({ fullName, Email, password });
     await signup.save();
-
     res.status(201).json({ success: true, message: 'User registration successful' });
   } catch (error) {
     console.error('Error creating user:', error.message);
