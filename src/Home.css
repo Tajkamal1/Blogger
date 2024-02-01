@@ -1,0 +1,17 @@
+.navbar1{
+    background: #2BA5D1;
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+.navbar1 ul{
+    margin-left: 1200px;
+}
+.navbar1 ul li{
+    display: inline;
+}
+.navbar1 a{
+    color: white;
+    margin: 14px 30px;
+    text-decoration: none;
+}
