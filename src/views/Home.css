@@ -1,0 +1,91 @@
+/* Home.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.navbar-Home {
+  background: #2BA5D1;
+  display: flex;
+  justify-content: space-between; /* Adjusted to space between */
+  align-items: center;
+  position: sticky;
+  padding: 10px; /* Added padding for better spacing */
+}
+
+.navbar-Home ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-Home ul li {
+  display: inline;
+  margin-right: 20px; /* Adjusted margin for spacing between list items */
+}
+
+.navbar-Home a {
+  color: white;
+  text-decoration: none;
+}
+
+#icon {
+  width: 200px;
+  height: 40px;
+}
+
+.content {
+  text-align: center;
+  color: #333;
+}
+
+.blog-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.blog-item {
+  width: 45%;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.blog-item h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.blog-item p {
+  color: #555;
+  font-size: 14px;
+}
+
+.blog-item img {
+  margin-right: 5px; 
+
+}
+
+.like{
+  width: 18px;
+  margin-left: 30px;
+}
+.comment{
+  width: 16px;
+  margin-left:40%;
+}
+.share{
+  width: 18px;
+  margin-left:40%;
+}
