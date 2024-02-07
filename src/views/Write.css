@@ -1,0 +1,80 @@
+/* Write.css */
+.navbar-write {
+  background-color: #2BA5D1;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky !important;
+}
+
+#icon {
+  width: 200px;
+  height: 40px;
+}
+
+.navbar-write a {
+  color: white;
+  text-decoration: none;
+  transition: border-color 0.3s, color 0.3s; /* Transition for smooth effect */
+}
+
+.navbar-write a:hover {
+  color: black;
+  border-color: #2BA5D1; /* Change border color on hover */
+}
+.write-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  
+  .write {
+    margin-left: 30%;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container-write {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container-write{
+    padding-bottom: 50px;
+    width: 500px;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .heading{
+    color: #2BA5D1;
+    font-size: 30px;
+    margin-left: 100px;
+  }
