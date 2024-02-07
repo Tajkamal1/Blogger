@@ -16,7 +16,6 @@ function EmailVerify() {
 
   const sendOtpByEmail = async (otp) => {
     try {
-      // Make a POST request to send OTP via email
       await fetch('http://localhost:5000/api/sendOtpByEmail', {
         method: 'POST',
         headers: {
@@ -26,19 +25,16 @@ function EmailVerify() {
       });
     } catch (error) {
       console.error('Error sending OTP via email:', error.message);
-      // Handle error, show a user-friendly message if needed
     }
   };
 
   const handleForgetPasswordClick = async () => {
     try {
-      // Check if email is empty
       if (!email.trim()) {
         console.log('Email is empty');
         return;
       }
 
-      // Make a POST request to check if the email exists
       const response = await fetch('http://localhost:5000/api/checkEmail', {
         method: 'POST',
         headers: {
@@ -50,21 +46,14 @@ function EmailVerify() {
       const data = await response.json();
 
       if (data.exists) {
-        // Email exists, generate a six-digit number
         const otp = generateRandomSixDigitNumber();
-
-        // Send the OTP via email
         await sendOtpByEmail(otp);
-
-        // Use navigate with state to pass data without displaying in the URL
         navigate('/OtpVerify', { state: { email, otp } });
       } else {
-        // Email does not exist, handle accordingly (e.g., show an error message)
         console.log('Email does not exist');
       }
     } catch (error) {
       console.error('Error checking email:', error.message);
-      // Handle error, show a user-friendly message if needed
     }
   };
 
@@ -90,7 +79,6 @@ function EmailVerify() {
               className="input"
               placeholder="Enter your Email Id"
             />
-            {/* Use onClick to trigger the email check */}
             <button onClick={handleForgetPasswordClick} className="button">
               Forget Password
             </button>
