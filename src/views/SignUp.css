@@ -51,12 +51,13 @@
   font-size: 50px;
   font-weight: 600;
   margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .signup-input-field {
   width: 100%;
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -81,10 +82,7 @@
   margin-right: 5px;
 }
 
-.signup-link {
-  padding-left: 160px;
-  margin-top: 20px;
-}
+
 
 /* Signup Submit Button Styles */
 .signup-submit-button {
@@ -166,14 +164,18 @@
   border-radius: 10px;
 }
 
-/* Signup Link Styles */
-.signup-link {
-  margin-top: 20px;
-}
-
 .signup-link a {
-  outline: block;
-  margin-left: 130px;
   text-decoration: none;
   color: black;
+  padding-left:60%;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .signup-link a {
+    text-decoration: none;
+   color: black;
+   padding-left: 150px;
+  }
+
 }
