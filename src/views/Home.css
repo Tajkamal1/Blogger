@@ -1,0 +1,162 @@
+/* Home.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.navbar-Home {
+  background: #2BA5D1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  padding: 10px;
+  position: sticky !important;
+}
+
+.navbar-Home ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-Home ul li {
+  display: inline;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-Home a {
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+
+#icon {
+  width: 200px;
+  height: 40px;
+}
+
+.content {
+  text-align: center;
+  color: #333;
+}
+
+.blog-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.blog-item {
+  width: 30%;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  height: 100%;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-item:hover {
+  transform: scale(1.05);
+}
+
+.blog-item h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.blog-item p {
+  color: #555;
+  font-size: 14px;
+}
+
+.blog-item img {
+  margin-right: 5px;
+}
+
+.like {
+  width: 18px;
+  margin-left: 3%;
+}
+
+.comment {
+  width: 18px;
+  margin-right: 1%;
+}
+
+.blog-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-image {
+  width: 100%;
+  height: 360px; /* Adjusted height */
+}
+
+.comment-section {
+  margin-top: 10px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.comment-section textarea {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+}
+
+.comment-section button {
+  background-color: #2BA5D1;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* Add this style for the like button click effect */
+.like:active {
+  transform: scale(2.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Add this style for the comment button click effect */
+.comment:active {
+  transform: scale(2.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.home-comment-textarea {
+  height: 20px;
+  display: inline;
+}
+
+.search-bar {
+  margin-left:50%; /* Adjusted margin */
+}
+
+.search-bar input {
+  padding: 5px;
+  width: 200px;
+}
+
+.logout-icon{
+  display: inline;
+  width: 20px;
+  margin-left: 10px;
+}
+.logout-icon:hover{
+  transform: scale(1.6);
+  transition: transform 0.2s ease-in-out;
+}
