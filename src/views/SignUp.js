@@ -88,7 +88,7 @@ const SignUp = () => {
             />
 
             <div className="signup-link">
-              <Link to="/">Already have an account?</Link>
+              <Link  to="/">Already have an account?</Link>
             </div>
             <br />
             <br />
