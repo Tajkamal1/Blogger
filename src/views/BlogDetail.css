@@ -1,0 +1,230 @@
+
+/* Styling for a specific class */
+.Blogdetail {
+  background: #ffffff;
+}
+
+/* Navigation Bar Styles */
+.blog-detail-nav {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky !important;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.blog-icon {
+  width: 80px;
+  height: 60px;
+}
+
+.home-icon {
+  width: 25px;
+}
+
+/* Styling for navigation list */
+.blog-detail-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.blog-detail-nav ul li {
+  margin-right: 20px;
+}
+
+.blog-detail-nav a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.blog-detail-nav a:hover {
+  color: #007bff;
+}
+
+/* Blog Structure*/
+
+.single-blog {
+  display: flex;
+}
+
+.left-side {
+  flex: 1.7; 
+}
+
+.right-side {
+  flex: 1; 
+  padding: 20px; 
+  box-sizing: border-box; 
+  border-left: 2px solid #ddd;
+}
+
+.blog-detail-container {
+  margin: 0px;
+}
+
+
+/* Main Container Styling*/
+
+.container-blogdetail {
+  max-width: auto;
+  margin: 20px 40px;
+}
+
+/* Blog Content Styling*/
+
+.title-blog {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blogdata-image {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.blog-content {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*Icons and Buttons Styling */
+
+.blog-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.blog-detail-like {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.like-count {
+  margin-right: 20px;
+}
+
+.success-msg {
+  color: green;
+  margin-top: 10px;
+}
+
+
+/* Textarea and Buttons Styling*/
+
+.blogdetail-textarea {
+  width: 85%;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 25px;
+}
+
+.voice-icon {
+  width: 25px;
+  cursor: pointer;
+}
+
+.loading {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.delete {
+  width: 23px;
+  margin-left: 20px;
+}
+
+.comment-submit-button-blog {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.comment-blog {
+  width: 30px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* */
+.similar-blogs{
+  display: flex;
+}
+
+/* Media Query for Mobile Devices*/
+
+@media only screen and (max-width: 600px) {
+  .blog-detail-nav {
+    align-items: center;
+    position: sticky !important;
+  }
+
+  .single-blog {
+    display: inline;
+  }
+
+  .blog-icon {
+    width: 80px;
+    height: auto;
+  }
+
+  .blogdetail-textarea {
+    width: 78%;
+    display: inline;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 25px;
+  }
+
+  .blog-detail-nav ul {
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .blog-detail-nav ul li {
+    margin: 10px 0;
+    margin-right: 15px;
+  }
+
+  .logout-icon {
+    margin-left: 0;
+  }
+
+  .blog-image {
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .comment-section textarea {
+    width: auto;
+    display: flex;
+  }
+
+  .container-blogdetail {
+    max-width: auto;
+    margin: 20px;
+    padding-right: 0px;
+    border-right: none !important;
+    padding-bottom: 50px;
+    border-bottom: 2px solid rgb(185, 176, 176);
+  }
+
+  .comment-submit-button-blog {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 35px;
+    cursor: pointer;
+  }
+}
