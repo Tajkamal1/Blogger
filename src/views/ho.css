@@ -1,0 +1,299 @@
+
+.home{
+  background-color: #fffefe;
+}
+
+.navbar-Home {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-Home ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-Home ul li {
+  margin-right: 20px;
+}
+
+.navbar-Home a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-Home a:hover {
+  color: #007bff;
+}
+
+#icon {
+  width: 80px;
+  height: 60px;
+  cursor: pointer;
+}
+.user-info{
+  align-items: center;
+  justify-self: center;
+  display: flex;
+}
+.user-icon {
+  margin-right: 10px!important;
+  width: 30px;
+  height: 30px;
+  padding: 1px;
+  border: 1px solid black;
+  border-radius: 50% !important;
+  overflow: hidden;
+}
+
+
+.user-name{
+  font-size: 18px;
+  
+}
+
+
+.content {
+  text-align: center;
+}
+
+
+.blog-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.blog-item {
+  width: 30%;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  height: 100%;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+.blog-item h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+.blog-item h3:hover{
+  color: #007bff;
+}
+
+.blog-item p {
+  color: #1e1d1d;
+  font-size: 15px;
+}
+.blog-item p:hover{
+  color: #007bff;
+}
+
+.blog-item img {
+  margin-right: 5px;
+  border-radius: 2px;
+  
+}
+
+
+.like,
+.comment {
+  width: 18px;
+}
+
+.blog-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  max-height: 260px;
+  object-fit: cover;
+}
+
+
+.comment-section {
+  margin-top: 10px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.comment-section textarea {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.comment-section button {
+  background-color: #2ba5d1;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+.like:active,
+.comment:active {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.home-comment-textarea {
+  height: 40px;
+  display: block;
+  width: 82%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin: 20px 0 10px 0;
+}
+.text-area{
+  display: flex;
+}
+
+
+.search-bar{
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 20px;
+  border: 2px solid #f3ff0c;
+}
+
+
+.logout-icon {
+  display: inline;
+  width: 26px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.logout-icon:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.single-line-title {
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.comment{
+  margin-left: auto;
+  
+}
+.comment-submit-button {
+  cursor: pointer;
+  width: 30px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+.navbar-Home ul li button {
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  width:125px;
+  border-radius: 90px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-Home ul li button:hover {
+  background-color: #e5ff00;
+  color: black;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .navbar-Home {
+    align-items: center;
+  }
+  
+  #icon {
+    width: 80px;
+    height: 60px;
+  }
+  
+  .home-comment-textarea {
+    height: 60px;
+    width: 80%;
+    display: block;
+  }
+  
+  .navbar-Home ul {
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .navbar-Home ul li {
+    margin: 10px 0;
+    margin-right: 15px;
+  }
+  
+  .search-bar {
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .search-bar input {
+    width: 80%;
+    box-sizing: border-box;
+  }
+  
+  .logout-icon {
+    margin-left: 0;
+  }
+  
+  .blog-list {
+    flex-direction: column;
+  }
+  
+  .blog-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .blog-image {
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .blog-item h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .blog-item p {
+    font-size: 12px;
+  }
+  
+  .comment-section textarea {
+    width: 100%;
+  }
+}
