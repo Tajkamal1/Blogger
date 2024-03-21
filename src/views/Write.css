@@ -1,0 +1,110 @@
+
+#icon-write{
+  width: 80px;
+  height: 60px;
+  cursor: pointer;
+}
+.logout-icon1{
+  margin-right: 30px;
+  display: inline;
+  width: 26px;
+  margin-left: 0px;
+  margin-top: 5px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.logout-icon1:hover{
+  transform: scale(1.2);
+}
+
+.navbar-write {
+  background: rgba(255, 255, 255, 1); /* Add transparency to the background color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  padding: 5px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+}
+.navbar-write ul{
+ list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-write ul li{
+  margin-right: 20px;
+}
+.navbar-write #icon {
+  width: 150px;
+  height: auto;
+}
+.navbar-write #login:hover {
+  color: #2BA5D1;
+}
+
+.navbar-write #login {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  
+}
+
+.container-write {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.form-container-write {
+  background-color: rgba(255, 255, 255, 0.8); /* Add transparency to the background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 8px;
+  width: 400px;
+  z-index: 1; /* Ensures the form is above the video */
+}
+
+.form-container-write label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.write-input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgb(57, 53, 53);
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: transparent; 
+  cursor: pointer;
+}
+
+.write-textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgb(57, 53, 53);
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: transparent; 
+}
+
+.write {
+  background-color: #2BA5D1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.write:active {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}

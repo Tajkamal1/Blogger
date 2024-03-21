@@ -1,0 +1,181 @@
+/* Profile.css */
+
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+/* Navbar styles */
+.navbar-Profile {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logout-icon-profile {
+  display: inline;
+  width: 26px;
+  margin-left: 0px;
+  margin-top: 5px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.logout-icon-profile:hover {
+  transform: scale(1.2);
+}
+
+#icon {
+  width: 80px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.navbar-Profile ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.navbar-Profile ul li {
+  margin-right: 20px;
+}
+
+.navbar-Profile a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-Profile a:hover {
+  color: #007bff;
+}
+
+/* Profile image styles */
+.profile-image {
+  width: 100%;
+  max-width: 180px; /* Limit maximum width for larger screens */
+  height: 100%;
+  margin-right: 10%; /* Adjust as needed */
+  position: relative; /* Add relative positioning */
+}
+
+.profile-container {
+  display: flex;
+  margin-left: 15%;
+  padding-top: 5%;
+}
+
+.profile-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.camera-icon {
+  position: absolute; /* Position the camera icon absolutely */
+  bottom: 20px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 2px solid white;
+  border-radius: 90%;
+  width: 20px;
+  height: 20px;
+}
+
+.profile-text {
+  margin-left: 5%;
+}
+.edit-icon{
+  cursor: pointer;
+  height: 18px;
+  width: 20px;
+}
+
+.profile-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 150%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border: 2px solid rgb(33, 215, 20);
+}
+
+/* Hover effect for input fields */
+.profile-input:hover {
+  border-color: #007bff;
+}
+
+.update-messages{
+  padding: 10px;
+  color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.edit,.save{
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 120px;
+  color: white;
+  cursor: pointer;
+}
+/* Media query for mobile view */
+@media (max-width: 600px) {
+  .profile-image {
+    width: auto;
+    height: auto;
+    margin-right: 5%; /* Adjust as needed */
+  }
+  .profile-input{
+    width:100%;
+    margin-top: 10px;
+  }
+
+  .profile-container {
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+    margin-left: 2%;
+  }
+  .profile-image {
+    display: flex;
+    width: 100%;
+    max-width: 200px; /* Limit maximum width for larger screens */
+    height: 70%;
+    margin-right: 10%; /* Adjust as needed */
+    position: relative; /* Add relative positioning */
+  }
+  .profile-text {
+    margin-left: 3%;
+  }
+  .edit,.save{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 120px;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+  }
+}
+

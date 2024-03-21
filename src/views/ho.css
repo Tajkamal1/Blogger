@@ -1,0 +1,172 @@
+/* Home.css */
+
+.home {
+  padding: 20px;
+}
+
+.navbar-Home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+#icon {
+  height: 40px;
+  width: 40px;
+}
+
+.search-bar {
+  flex: 1;
+  margin: 0 10px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-left: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-icon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.blog-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.blog-content {
+  margin-bottom: 10px;
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.home-content-p {
+  cursor: pointer;
+}
+
+.blog-icons {
+  display: flex;
+  align-items: center;
+}
+
+.like, .comment {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.like-count {
+  margin-right: 10px;
+}
+
+.comment-submit-button {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.home-comment-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.success-msg {
+  color: green;
+}
+
+/* Media Queries for Mobile and Tablet Views */
+
+@media screen and (max-width: 768px) {
+  .navbar-Home {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #searchInput {
+    margin-top: 10px;
+  }
+
+  ul {
+    margin-top: 10px;
+  }
+
+  .blog-icons {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-content-p {
+    font-size: 14px;
+  }
+
+  .like-count {
+    font-size: 12px;
+  }
+
+  .comment-submit-button {
+    height: 15px;
+    width: 15px;
+  }
+}

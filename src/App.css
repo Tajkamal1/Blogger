@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Default font with backup */
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1.5; /* Adjust the line height for readability */
+  
+    /* Additional styles */
+    color: #333; /* Default text color */
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* Headings font */
+  }
+  
+  p {
+    font-family: 'Open Sans', sans-serif; /* Body text font */
+  }
+  
+  /* Example of using custom fonts from Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+  
+  

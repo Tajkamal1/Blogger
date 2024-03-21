@@ -1,0 +1,176 @@
+/* Profile.css */
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+  }
+  
+  /* Navbar styles */
+  .navbar-Profile {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logout-icon-profile {
+    display: inline;
+    width: 26px;
+    margin-left: 0px;
+    margin-top: 5px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .logout-icon-profile:hover {
+    transform: scale(1.2);
+  }
+  
+  #icon {
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+  }
+  
+  .navbar-Profile ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .navbar-Profile ul li {
+    margin-right: 20px;
+  }
+  
+  .navbar-Profile a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-Profile a:hover {
+    color: #007bff;
+  }
+  
+  /* Profile image styles */
+  .profile-image {
+    width: 180px; /* Adjusted width for consistency */
+    height: 180px; /* Maintained a square aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container */
+    border: 3px solid rgb(116, 110, 110);
+  }
+  
+  .camera-icon {
+    position: absolute; /* Position the camera icon absolutely */
+    bottom: 20px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 2px solid white;
+    border-radius: 90%;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .profile-image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Profile container styles */
+  .profile-container {
+    display: flex;
+    flex-direction: column; /* Display children in a column layout */
+    align-items: center; /* Center align items horizontally */
+    margin-top: 30px; /* Increased top margin for better spacing */
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column; /* Adjusted to display user details in a column layout */
+    align-items: center; /* Center align items horizontally */
+    margin-top: 20px; /* Increased top margin for better spacing */
+  }
+  
+  .profile-text {
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  
+  .profile-info {
+    margin-top: 10px; /* Increased top margin for better spacing */
+  }
+  
+  .profile-input {
+    padding: 10px; /* Increased padding for better input area */
+    border: 2px solid #ccc;
+    border-radius: 20px; /* Increased border-radius for a rounded input */
+    width: 250px; /* Adjusted width for better readability */
+    margin-bottom: 20px; /* Increased bottom margin for better spacing */
+  }
+  
+  /* Hover effect for input fields */
+  .profile-input:hover {
+    border-color: #007bff;
+  }
+  
+  .update-messages {
+    padding: 10px;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Increased top margin for better spacing */
+  }
+  
+  .edit,
+  .save {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px 20px; /* Increased padding for better clickability */
+    border: none;
+    border-radius: 20px; /* Increased border-radius for a rounded button */
+    color: white;
+    cursor: pointer;
+    margin-top: 20px; /* Increased top margin for better spacing */
+  }
+  
+  .edit:hover,
+  .save:hover {
+    background-color: #0056b3; /* Darker shade on hover for better visual feedback */
+  }
+  
+  /* Media query for mobile view */
+  @media (max-width: 600px) {
+    .profile-image {
+      width: 150px; /* Adjusted width for smaller screens */
+      height: 150px; /* Adjusted height for smaller screens */
+    }
+  
+    .camera-icon {
+      bottom: 20px; /* Adjusted position for smaller screens */
+      right: 10px;
+      height: 15px;
+      width: 15px;/* Adjusted position for smaller screens */
+    }
+  
+    .profile-input {
+      width: 80%; /* Adjusted width for smaller screens */
+    }
+  }
+  
